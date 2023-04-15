@@ -65,14 +65,14 @@
                     </div>
                 </div>
                 <div class="img-fluid">
-                    <!-- <img src="/img/caracteristicas/about-img.jpg" class="img-fluid" alt=""> -->
+                    <img src="/img/caracteristicas/about-img.jpg" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
 
         <div class="row about-extra">
             <div class="img-fluid">
-                <!-- <img src="/img/caracteristicas/about-extra.jpg" class="img-fluid" alt=""> -->
+                <img src="/img/caracteristicas/about-extra.jpg" class="img-fluid" alt="">
             </div>
             <div class="content">
                 <h4>Múevete por la Ciudad con la mejor Opción en Taxi Corporativo</h4>
@@ -103,7 +103,7 @@
                 </p>
             </div>
             <div class="img-fluid">
-                <img src="img/caracteristicas/about-extra-2.jpg" class="img-fluid" alt="">
+                <img src="/img/caracteristicas/about-extra-2.jpg" class="img-fluid" alt="">
             </div>
         </div>
     </div>
