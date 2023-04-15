@@ -1,0 +1,88 @@
+.section-servicios
+    padding: 60px 0 40px 0
+    box-shadow: inset 0px 0px 12px 0px rgb(0 0 0 / 10%)
+    width: 100%
+    padding-right: 5%
+    padding-left: 5%
+    margin-right: auto
+    margin-left: auto
+    .container
+        width: 100%
+        padding-right: 15px
+        padding-left: 15px
+        margin-right: auto
+        margin-left: auto
+        .section-header
+            font-size: 3rem
+            color: #283d50
+            text-align: center
+            font-weight: 800
+            margin-bottom: 1rem
+            position: relative
+    .row
+        display: -ms-flexbox
+        display: flex
+        -ms-flex-wrap: wrap
+        flex-wrap: wrap
+        margin-right: -15px
+        margin-left: -15px
+        .items-servicio
+            margin: 0 auto
+            display: flex
+            justify-content: center
+        .box
+            padding: 30px
+            position: relative
+            overflow: hidden
+            border-radius: 10px
+            margin: 0 10px 40px 10px
+            background: #fff
+            box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%)
+            transition: all 0.3s ease-in-out
+            &:hover
+                -webkit-transform: translateY(-5px)
+                transform: translateY(-5px)
+                .title
+                    > a
+                        color: #007bff
+            .icon
+                position: absolute
+                left: -10px
+                top: calc(50% - 32px)
+                > i
+                    font-size: 64px
+                    line-height: 1
+                    transition: 0.5s
+                .price-tag
+                    color: #17b841
+                .gear-tag
+                    color: #895d31
+                .check-tag
+                    color: #b73fcd
+                .compose-tag
+                    color: #2f76c3
+                .location-tag
+                    color: #343a40
+                .medical-tag
+                    color: #94a922
+            .title
+                margin-left: 40px
+                font-weight: 700
+                margin-bottom: 15px
+                font-size: 18px
+                > a
+                    color: #111
+                    text-decoration: none
+                    background-color: transparent
+                    transition: 0.5s
+            .description
+                font-size: 14px
+                margin-left: 40px
+                line-height: 24px
+                margin-bottom: 0
+                text-align: justify
+@media(min-width: 992px)
+    .items-servicio
+        -ms-flex: 0 0 41.666667%
+        flex: 0 0 41.666667%
+        max-width: 41.666667%

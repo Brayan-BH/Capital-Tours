@@ -1,0 +1,159 @@
+.section-about
+    padding: 60px 0
+    .container-about
+        width: 100%
+        padding: 0 5%
+        margin-right: auto
+        margin-left: auto
+        .header-about
+            text-align: center
+            h3
+                font-size: 3rem
+                color: #283d50
+                text-align: center
+                font-weight: 700
+                position: relative
+                margin: 0 0 20px 0
+                padding: 0
+            p
+                text-align: center
+                margin: auto
+                font-size: 15px
+                padding-bottom: 60px
+                color: #556877
+                width: 50%
+        .row-about
+            display: grid
+            // grid-template-columns: 1fr 1fr
+            grid-template-columns: repeat(auto-fit, minmax(292px, 1fr))
+            padding: 0 5%
+            .content-list
+                position: relative
+                width: 100%
+                padding: 0 5%
+                margin-top: 3rem
+                .title-about
+                    color: #333
+                    font-weight: 700
+                    font-size: 32px
+                    h3
+                        color: #333
+                        font-weight: 700
+                        font-size: 32px
+                        margin: 0 0 20px 0
+                        padding: 0
+                    p
+                        color: #556877
+                        font-size: 18px
+                        margin: 0 0 20px 0
+                        padding: 0
+            .box-info
+                padding: 0 0 30px 0
+                .icon
+                    float: left
+                    background: #fff
+                    width: 64px
+                    height: 64px
+                    display: -webkit-box
+                    display: -webkit-flex
+                    display: -ms-flexbox
+                    display: flex
+                    -webkit-box-pack: center
+                    -webkit-justify-content: center
+                    -ms-flex-pack: center
+                    justify-content: center
+                    -webkit-box-align: center
+                    -webkit-align-items: center
+                    -ms-flex-align: center
+                    align-items: center
+                    -webkit-box-orient: vertical
+                    -webkit-box-direction: normal
+                    -webkit-flex-direction: column
+                    -ms-flex-direction: column
+                    flex-direction: column
+                    text-align: center
+                    border-radius: 50%
+                    border: 2px solid #5c5b5b
+                    transition: all 0.3s ease-in-out
+                    i
+                        color: #9f9b9b
+                        font-size: 30px
+                .title
+                    margin-left: 80px
+                    font-weight: 600
+                    margin-bottom: 5px
+                    font-size: 18px
+                .description
+                    margin-left: 80px
+                    line-height: 24px
+                    font-size: 14px
+            .img-fluid
+                margin: 20px 0
+                padding-right: 15px
+                padding-left: 15px
+                display: grid
+                // grid-column: 2
+                img
+                    max-width: 100%
+                    width: 540px
+                    height: auto
+                .title
+                    margin-left: 80px
+                    font-weight: 600
+                    margin-bottom: 5px
+                    font-size: 18px
+.about-extra
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(292px, 1fr))
+    padding: 0 5%
+    .img-fluid
+        margin: 20px 0
+        padding: 0 5%
+        display: grid
+        img
+            max-width: 100%
+            width: 540px
+            height: auto
+    h4
+        font-weight: 600
+        font-size: 2rem
+        margin: 0 0 20px 0
+        padding: 0
+    p
+        font-size: 14px
+        margin-bottom: 20px
+    .content
+        position: relative
+        width: 100%
+        padding: 0 5%
+        margin-top: 20px
+.about-extra-2
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(292px, 1fr))
+    padding: 0 5%
+    .img-fluid
+        margin: 20px 0
+        padding-right: 15px
+        padding-left: 15px
+        display: grid
+        img
+            max-width: 100%
+            width: 540px
+            height: auto
+    h4
+        font-weight: 600
+        font-size: 2rem
+        margin: 0 0 20px 0
+        padding: 0
+    p
+        font-size: 14px
+        margin-bottom: 20px
+    .content
+        position: relative
+        width: 100%
+        padding: 0 5%
+        // margin-top: 20px
+@media (max-width: 668px)
+    .row-about
+        display: flex
+        flex-direction: column
