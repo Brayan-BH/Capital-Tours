@@ -83,7 +83,8 @@
                     </div>
                 </div>
                 <div class="text__img">
-                    <img src="/img/banner/taxi-fondo.webp" alt="">
+                    <img class="img" src="/img/banner/taxi-fondo.webp" alt="">
+                    <!-- <img class="img-fluid" src="/img/banner/taxi-noche.jpg" alt=""> -->
                 </div>
             </div>
 
