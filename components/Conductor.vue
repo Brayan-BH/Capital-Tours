@@ -9,7 +9,8 @@
             </div>
             <div class="wrapper">
                 <div class="wrapper_text">
-                    Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus
+                    Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur
+                    dapibus
                     pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.
                 </div>
                 <div class="column">
@@ -27,6 +28,12 @@
                 <div class="wrap">
                     <a href="" class="btn-wrap">Become a Driver</a>
                 </div>
+            </div>
+        </div>
+        <div class="container-img">
+            <div class="img-content">
+                <img
+                    src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_926,h_617/v1613520285/assets/c2/91ea9c-90d7-4c36-a740-d7844536694e/original/Cities_Home_Img2x.png">
             </div>
         </div>
     </div>
