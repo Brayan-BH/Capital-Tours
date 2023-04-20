@@ -12,7 +12,7 @@
         max-width: 100%
         margin-bottom: 45px
         h4
-            color: #ffc61a
+            color: #00dc82
             margin-bottom: 0
             margin-top: 0
             font-size: 24px
@@ -62,28 +62,13 @@
                             -webkit-font-smoothing: antialiased
                             -moz-osx-font-smoothing: grayscale
                             font-weight: 100
-                            color: #FFC61A
+                            color: #00dc82
                             position: absolute
                             margin: 2px 0 0 -26px
                             font-size: 27px
         .wrap
             display: flex
             justify-content: flex-start
-            .btn-wrap
-                text-transform: uppercase
-                border-radius: 30px
-                transition: all .3s ease
-                font-size: 16px
-                line-height: 1.9em
-                padding: 9px 40px 11px
-                font-weight: 700
-                margin-bottom: 25px
-                border: 0
-                color: #1F1F1F
-                background: #FFC61A
-                background-color: rgb(255, 198, 26)
-                display: inline-block
-                text-decoration: none
     .container-img
         box-sizing: border-box
         padding: 0 5%
@@ -103,6 +88,7 @@
                 transform: scaleX(1)
                 padding-bottom: 0px
 .animation-block
+    margin-bottom: 5vh
     .block
         background-color: #ffffff
         display: -webkit-box
@@ -154,10 +140,13 @@
                 margin-left: auto
                 margin-top: 8rem
                 align-self: flex-start
-                .container-inner
+                .inner-conatiner
                     padding: 64px
+                    width: 50%
+                    max-width: 100%
                     color: inherit
-                    background-color: transparent
+                    border-radius: 15px
+                    background-color: #00dc8247
                     .inner-grid
                         grid-column-gap: 36px
                         grid-row-gap: 36px
@@ -218,9 +207,25 @@
             .wrapper_items
                 column-count: 1
     .animation-block
+        margin-bottom: 5vh
         .block
             padding-top: 0
             padding-bottom: 0
+            .block_img
+                .container-text
+                    max-width: 100%
+                    padding-top: 0
+                    padding-bottom: 0
+                    .inner-conatiner
+                        padding: 40px 24px
+                        .inner-grid
+                            grid-column-gap: 16px
+                            grid-row-gap: 36px
+                            grid-template-columns: repeat(4, 1fr)
+                            .grid
+                                grid-column: 1/-1
+                                .container-title
+                                    margin-bottom: 16px
 @media screen and (max-width: 600px)
     .conductor-container
         width: 100%
@@ -232,6 +237,7 @@
             .wrapper_items
                 column-count: 1
     .animation-block
+        margin-bottom: 5vh
         .block
             padding-top: 0
             padding-bottom: 0
@@ -240,8 +246,9 @@
                     max-width: 100%
                     padding-top: 0
                     padding-bottom: 0
-                    .container-inner
+                    .inner-conatiner
                         padding: 40px 24px
+                        width: 100%
                         .inner-grid
                             grid-column-gap: 16px
                             grid-row-gap: 36px
@@ -261,6 +268,7 @@
             .wrapper_items
                 column-count: 1
     .animation-block
+        margin-bottom: 5vh
         .block
             padding-top: 0
             padding-bottom: 0
@@ -269,7 +277,7 @@
                     max-width: 100%
                     padding-top: 0
                     padding-bottom: 0
-                    .container-inner
+                    .inner-conatiner
                         padding: 40px 24px
                         .inner-grid
                             grid-column-gap: 16px

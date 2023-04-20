@@ -43,19 +43,21 @@
             <div class="block_img">
                 <div class="img_background"></div>
                 <div class="container-text">
-                    <div class="container-inner">
+                    <div class="inner-conatiner">
                         <div class="inner-grid">
                             <div class="grid">
                                 <div>
                                     <div class="container-title">
-                                        <h2>Uber&nbsp;para&nbsp;Empresas</h2>
+                                        <h2>Capital Tours&nbsp;</h2>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="container-paragraph">
-                                        <p>Transforma la movilidad de tu empresa y
-                                            ofrece
-                                            comidas a tu&nbsp;personal.</p>
+                                        <strong>
+                                            <p>Transforma la movilidad de tu empresa y
+                                                ofrece
+                                                comidas a tu&nbsp;personal.</p>
+                                        </strong>
                                     </div>
                                 </div>
                                 <div class="container-button">
