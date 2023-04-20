@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="wrap">
-                    <a href="" class="btn-wrap">Become a Driver</a>
+                    <a href="" class="button-2">Become a Driver</a>
                 </div>
             </div>
         </div>
@@ -36,5 +36,38 @@
                     src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_926,h_617/v1613520285/assets/c2/91ea9c-90d7-4c36-a740-d7844536694e/original/Cities_Home_Img2x.png">
             </div>
         </div>
+    </div>
+
+    <div class="animation-block">
+        <section class="block">
+            <div class="block_img">
+                <div class="img_background"></div>
+                <div class="container-text">
+                    <div class="container-inner">
+                        <div class="inner-grid">
+                            <div class="grid">
+                                <div>
+                                    <div class="container-title">
+                                        <h2>Uber&nbsp;para&nbsp;Empresas</h2>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="container-paragraph">
+                                        <p>Transforma la movilidad de tu empresa y
+                                            ofrece
+                                            comidas a tu&nbsp;personal.</p>
+                                    </div>
+                                </div>
+                                <div class="container-button">
+                                    <a class="button-2">
+                                        Conoce cómo hacerlo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </template>
