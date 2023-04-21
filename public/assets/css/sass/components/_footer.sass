@@ -1,0 +1,237 @@
+.footer
+    position: relative
+    color: #111
+    background: linear-gradient(180deg, rgba(246,246,246,1) 0%, rgba(109,213,163,1) 50%, rgba(109,213,163,1) 100%)
+    z-index: 1
+    border-radius: 6.4rem 6.4rem 0 0
+    .footer__inner
+        padding-right: calc(50vw - 622.5px)
+        padding-left: calc(50vw - 622.5px)
+        padding-top: 3rem
+        padding-bottom: 4.8rem
+        .row
+            display: flex
+            flex-direction: row
+            .col-6
+                width: 48.6072727273%
+                margin-right: 2.7854545455%
+                h2
+                    margin: 0
+                    padding: 0
+                    font-style: normal
+                    font-size: 100%
+                    background: transparent
+                    border: 0
+                    outline: 0
+                .footer__title
+                    font-size: 2.8rem
+                    line-height: 1.44
+                    font-weight: 300
+            .footer-grid
+                width: 100%
+                display: grid
+                grid-template-columns: repeat(5,auto)
+                grid-gap: 40px
+                padding-left: 80px
+                position: relative
+                min-height: 1px
+                padding-right: 15px
+                h3
+                    font-weight: bold
+                    margin-bottom: 15px
+                    line-height: 1.2
+                    margin-top: 0
+                ul
+                    padding: 0
+                    list-style: none
+                    margin: 0 0 1.5em 0.3em
+                    li
+                        padding-bottom: 5px
+                        a
+                            text-decoration: none
+                            background-color: transparent
+                            color: #111
+    .footer__sub
+        display: flex
+        border-top: .1rem solid #ffffff
+        flex-direction: row
+        align-items: center
+        height: 14rem
+        padding-right: calc(50vw - 622.5px)
+        padding-left: calc(50vw - 622.5px)
+        .subFooter__credits
+            flex-direction: row
+            align-items: center
+            margin-right: auto
+            margin-bottom: 0
+            display: flex
+            font-style: italic
+            a
+                margin-right: 3.5rem
+                margin-bottom: 0
+                padding: 0
+                appearance: none
+                font-family: inherit
+                font-weight: inherit
+                text-decoration: none
+        .subFooter__sn
+            display: flex
+            align-items: center
+            margin-right: 4.4rem
+            margin-bottom: 0
+            list-style: none
+            .sn
+                justify-content: center
+                position: relative
+                z-index: 1
+                width: 3.8rem
+                height: 3.8rem
+                display: flex
+                align-items: center
+                &::before
+                    content: ""
+                    position: absolute
+                    top: 0
+                    right: 0
+                    bottom: 0
+                    left: 0
+                    z-index: -1
+                    background-color: #fff
+                    border-radius: 1.9rem
+                    transition: transform .4s cubic-bezier(.215,.61,.355,1)
+                    user-select: none
+                &:not(:last-child)
+                    margin-right: 1rem
+                .sn__link
+                    position: absolute
+                    top: 0
+                    right: 0
+                    bottom: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    background: none
+                    border: none
+                    padding: 0
+                    margin: 0
+                    font-size: 100%
+                    color: inherit
+                    font-weight: inherit
+                    text-decoration: none
+                    appearance: none
+                    font-family: inherit
+                    .sr-only:not(focus)
+                        overflow: hidden
+                        position: absolute
+                        width: 1px
+                        height: 1px
+                        margin: -1px
+                        padding: 0
+                        border: 0
+                        clip: rect(0 0 0 0)
+@media only screen and (max-width: 1250px)
+    .footer
+        .footer__inner
+            .row
+                display: flex
+                flex-direction: column
+                padding: 5%
+                .footer-grid
+                    display: flex
+                    flex-direction: row
+                    padding-left: 48px
+                    margin-left: auto
+                    position: relative
+                    min-height: 1px
+                    padding-right: 15px
+                    flex-wrap: wrap
+                .col-6
+                    width: 100%
+                    padding: 5%
+        .footer__sub
+            padding-top: 4.2rem
+            padding-bottom: 4.9rem
+            padding-right: 8.53vw
+            padding-left: 8.53vw
+            display: flex
+            flex-direction: column
+            border-top: 0.1rem solid #ffffff
+            align-items: flex-start
+            height: auto
+            .subFooter__credits
+                display: flex
+                flex-direction: column
+                margin-bottom: 4.2rem
+                font-style: italic
+                align-items: start
+                margin-right: auto
+                a
+                    margin-bottom: 1.1rem
+                    .sr-only:not(:focus)
+                        overflow: hidden
+                        position: absolute
+                        width: 1px
+                        height: 1px
+                        margin: -1px
+                        padding: 0
+                        border: 0
+                        clip: rect(0 0 0 0)
+            .subFooter__sn
+                display: flex
+                align-items: center
+                margin-bottom: 2rem
+
+@media only screen and (max-width: 600px)
+    .footer
+        .footer__inner
+            .row
+                display: flex
+                flex-direction: column
+                padding: 5%
+                .footer-grid
+                    display: flex
+                    flex-direction: row
+                    padding-left: 48px
+                    margin-left: auto
+                    position: relative
+                    min-height: 1px
+                    padding-right: 15px
+                    flex-wrap: wrap
+                .col-6
+                    width: 100%
+                    padding: 5%
+                    .container-button
+                        display: flex
+                        justify-content: flex-start
+        .footer__sub
+            padding-top: 4.2rem
+            padding-bottom: 4.9rem
+            padding-right: 8.53vw
+            padding-left: 8.53vw
+            display: flex
+            flex-direction: column
+            border-top: 0.1rem solid #ffffff
+            align-items: flex-start
+            height: auto
+            .subFooter__credits
+                display: flex
+                flex-direction: column
+                margin-bottom: 4.2rem
+                font-style: italic
+                align-items: start
+                margin-right: auto
+                a
+                    margin-bottom: 1.1rem
+                    .sr-only:not(:focus)
+                        overflow: hidden
+                        position: absolute
+                        width: 1px
+                        height: 1px
+                        margin: -1px
+                        padding: 0
+                        border: 0
+                        clip: rect(0 0 0 0)
+            .subFooter__sn
+                display: flex
+                align-items: center
+                margin-bottom: 2rem

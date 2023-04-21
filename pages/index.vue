@@ -1,5 +1,6 @@
 <template>
        <Intro />
        <Servicio />
-       <Conductor/>
+       <Conductor />
+       <Footer />
 </template>
