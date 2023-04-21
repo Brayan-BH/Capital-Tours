@@ -126,7 +126,7 @@
             <small class="subFooter__credits">
                 <nuxt-link to="https://www.scor.com/" target="_blank" rel="noopener">
                     <span class="sr-only">SCOR</span>
-                    <img src="/img/logo.png" class="logo logo--scor | db" width="125" height="36" viewBox="0 0 125 36"
+                    <img src="/img/logo.png" class="logo logo--scor | db" width="125" height="62" viewBox="0 0 125 36"
                         fill="#fff" aria-hidden="true">
 
                 </nuxt-link>
