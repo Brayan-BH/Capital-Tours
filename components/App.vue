@@ -15,11 +15,7 @@
     <div class="clearfix">
       <div class="container-group">
         <div class="container-layout">
-          <img
-            src="/img/movil/rayon.png"
-            alt=""
-            class="u-image"
-          />
+          <img src="/img/movil/rayon.png" alt="" class="u-image" />
           <h2 class="text-1">Neue Toyota Concept Cars in Tokio</h2>
           <p class="text-2">
             At the 2016 Consumer Electronics Show (CES) in Las Vegas, Toyota is
@@ -29,11 +25,8 @@
             other companies are at CES showing off battery based EV’s, Toyota is
             sticking with their fuel cells.
           </p>
-          <a
-            href="https://longtailpipe.com/2016/01/06/for-toyota-the-future-of-mobility-still-does-not-plug-in-but-is-foolishly-dependent-on-hydrogen/"
-            class="button-2"
-            target="_blank"
-          >
+          <a href="https://longtailpipe.com/2016/01/06/for-toyota-the-future-of-mobility-still-does-not-plug-in-but-is-foolishly-dependent-on-hydrogen/"
+            class="button-2" target="_blank">
             learn more
           </a>
         </div>

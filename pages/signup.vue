@@ -1,3 +1,3 @@
 <template>
-    <h1>Register</h1>
+    <Signup />
 </template>
