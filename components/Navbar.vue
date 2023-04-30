@@ -4,15 +4,16 @@
         <div class="head-container">
             <div class="container__item">
                 <div class="item__button_menu" ref="button_movil_menu">
-                    <nuxt-link  :href="interaction.menu_movil_action" class="item-button-menu__href" @click="menu_movil_click">
+                    <nuxt-link :href="interaction.menu_movil_action" class="item-button-menu__href"
+                        @click="menu_movil_click">
                         <div class="item-button-menu__container">
                             <i class="material-icons">{{ interaction.movil_menu_icon }}</i>
                         </div>
-                    </nuxt-link >
+                    </nuxt-link>
                 </div>
-                <nuxt-link  class="item__logo" itemprop="url" href="/">
+                <nuxt-link class="item__logo" itemprop="url" href="/">
                     <img class="logo__img" src="/img/logo.png" alt="logo">
-                </nuxt-link >
+                </nuxt-link>
                 <div class="item__div">
                     <nuxt-link class="div__text" to="/">
                         <span>Capital Tours</span>
@@ -20,24 +21,25 @@
                 </div>
                 <nav id="id-menu" class="item__menu" :class="[interaction.movil_menu_open ? 'open' : '']">
                     <ul class="menu_ul">
-                        <li class="ul__li">
+                        <li class="ul__li" @click="menu_movil_close">
                             <nuxt-link to="/" class="li__text">Inicio</nuxt-link>
                         </li>
-                        <li class="ul__li">
+                        <li class="ul__li" @click="menu_movil_close">
                             <nuxt-link to="/nosotros" class="li__text">Nosotros</nuxt-link>
                         </li>
-                        <li class="ul__li">
+                        <li class="ul__li" @click="menu_movil_close">
                             <nuxt-link to="/app" class="li__text">Descargas</nuxt-link>
                         </li>
-                        <li class="ul__li">
+                        <li class="ul__li" @click="menu_movil_close">
                             <nuxt-link to="/contactanos" class="li__text">Contáctanos</nuxt-link>
                         </li>
-                        <li class="ul__li">
+                        <li class="ul__li" @click="menu_movil_close">
                             <nuxt-link to="/conductor" class="li__text">Conductores</nuxt-link>
-                        </li><li class="ul__li">
+                        </li>
+                        <li class="ul__li" @click="menu_movil_close">
                             <nuxt-link to="/servicios" class="li__text">Servicios</nuxt-link>
                         </li>
-                        <li class="ul__li">
+                        <li class="ul__li" @click="menu_movil_close">
                             <nuxt-link to="/requisitos" class="li__text">Requisitos</nuxt-link>
                         </li>
                     </ul>
@@ -131,35 +133,37 @@
 
 <script>
 
-export default {
-    name: "Navbar",
-    mounted() {
-        let l = this.$refs.button_movil_menu
-        console.log(l.style.display);
-    },
-    data() {
-        return {
-            interaction: {
-                movil_menu_open: false,
-                menu_movil_action: "#id-menu",
-                movil_menu_icon: "menu"
-            }
-        }
-    },
-    methods: {
-        menu_movil_click() {
-            this.interaction.movil_menu_open = !this.interaction.movil_menu_open
-            if (this.interaction.movil_menu_open) {
-                this.interaction.menu_movil_action = "#"
-                this.interaction.movil_menu_icon = "close"
-            } else {
-                this.interaction.menu_movil_action = "#id-menu"
-                this.interaction.movil_menu_icon = "menu"
-            }
+    export default {
+        name: "Navbar",
+        mounted() {
+            let l = this.$refs.button_movil_menu;
+            console.log(l.style.display);
         },
-        menu_movil_close() {
-            this.interaction.movil_menu_open = false
+        data() {
+            return {
+                interaction: {
+                    movil_menu_open: false,
+                    menu_movil_action: "#id-menu",
+                    movil_menu_icon: "menu"
+                }
+            };
+        },
+        methods: {
+            menu_movil_click() {
+                this.interaction.movil_menu_open = !this.interaction.movil_menu_open;
+                if (this.interaction.movil_menu_open) {
+                    this.interaction.menu_movil_action = "#";
+                    this.interaction.movil_menu_icon = "close";
+                } else {
+                    this.interaction.menu_movil_action = "#id-menu";
+                    this.interaction.movil_menu_icon = "menu";
+                }
+            },
+            menu_movil_close() {
+                this.interaction.movil_menu_open = false;
+                this.interaction.movil_menu_icon = "menu";
+
+            }
         }
-    }
-}
+    };
 </script>
