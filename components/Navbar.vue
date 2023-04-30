@@ -27,13 +27,13 @@
                             <nuxt-link to="/nosotros" class="li__text">Nosotros</nuxt-link>
                         </li>
                         <li class="ul__li">
-                            <nuxt-link to="/equipo" class="li__text">Equipo</nuxt-link>
+                            <nuxt-link to="/app" class="li__text">Descargas</nuxt-link>
                         </li>
                         <li class="ul__li">
                             <nuxt-link to="/contactanos" class="li__text">Contáctanos</nuxt-link>
                         </li>
                         <li class="ul__li">
-                            <nuxt-link to="/empresas" class="li__text">Empresa</nuxt-link>
+                            <nuxt-link to="/conductor" class="li__text">Conductores</nuxt-link>
                         </li><li class="ul__li">
                             <nuxt-link to="/servicios" class="li__text">Servicios</nuxt-link>
                         </li>

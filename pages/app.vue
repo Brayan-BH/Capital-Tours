@@ -1,3 +1,3 @@
 <template>
-    <Requisitos />
+    <App />
 </template>

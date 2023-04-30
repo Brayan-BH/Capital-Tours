@@ -1,0 +1,4 @@
+@font-face {
+    font-family: MWF-FLUENT-ICONS;
+    src: url(./microsoft/resources/fonts/MWFFluentIcons.woff2) format("woff2"), url(./microsoft/resources/fonts/MWFFluentIcons.woff) format("woff"), url(./microsoft/resources/fonts/MWFFluentIcons.ttf) format("truetype")
+}

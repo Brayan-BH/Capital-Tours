@@ -33,7 +33,7 @@
         <div class="container-img">
             <div class="img-content">
                 <img
-                    src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_926,h_617/v1613520285/assets/c2/91ea9c-90d7-4c36-a740-d7844536694e/original/Cities_Home_Img2x.png">
+                    src="/img/conductor/huancayo.jpg">
             </div>
         </div>
     </div>
