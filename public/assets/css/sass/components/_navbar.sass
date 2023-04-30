@@ -94,81 +94,6 @@
 					margin-bottom: 0
 					.ul__li
 						display: inline-block
-						.li__container
-							position: static
-							position: relative
-							.li-container__button
-								position: relative
-								color: #262626
-								border: 1px solid transparent
-								display: inline-block
-								margin-top: 1px
-								outline-offset: -2px
-								background: transparent
-								text-align: left
-								padding: 20px 30px 16px 16px
-								&:after
-									font-family: "MWF-MDL2"
-									content: ""
-									position: absolute
-									font-size: 8px
-									display: inline-block
-									color: currentColor
-									font-weight: 700
-									padding-top: 5px
-									right: 15px
-								&:hover::before
-									background: currentColor
-									content: ""
-									height: 2px
-									position: absolute
-									bottom: 12px
-									width: calc(100% - 45px)
-							&:active .li-container__menu
-								display: flex
-							.li-container__menu
-								margin-left: 0px
-								display: none
-								flex-flow: row wrap
-								border-color: rgba(0,0,0,.05) rgba(0,0,0,.05) #000
-								margin-top: -2px
-								background: #ffffff
-								white-space: nowrap
-								max-width: none
-								width: auto
-								border-style: solid
-								border-width: 1px 1px 2px
-								top: 100%
-								z-index: 700
-								min-width: 64px
-								padding: 1px 0 0 0
-								margin: 0
-								border: 0
-								position: absolute
-								list-style: none
-								&:hover
-									display: flex
-								.menu__header
-									cursor: default
-									background: transparent !important
-									width: 195px
-									padding-left: 24px
-									padding-top: 18px
-									padding-bottom: 18px
-									color: #000
-									font-weight: 600
-								.menu__body
-									margin-top: -1px
-									padding-left: 24px
-									.body__item
-										list-style: none
-										>a
-											text-decoration: none
-											color: #262626
-											padding-top: 12px
-											padding-bottom: 12px
-											display: block
-											white-space: normal
 						.li__text
 							position: relative
 							border: 1px solid transparent
@@ -181,14 +106,7 @@
 							text-decoration: none
 							margin-left: 4px
 							margin-right: 4px
-							cursor: default
-							&:focus::before
-								background: currentColor
-								content: ""
-								height: 2px
-								position: absolute
-								bottom: 9px
-								width: calc(100% - 16px)
+							cursor: pointer
 							&:hover::before
 								background: currentColor
 								content: ""
@@ -196,6 +114,13 @@
 								position: absolute
 								bottom: 9px
 								width: calc(100% - 16px)
+						.active::before
+							background: currentColor
+							content: ""
+							height: 2px
+							position: absolute
+							bottom: 9px
+							width: calc(100% - 16px)
 					.whats_platcont
 						display: none
 			.item__action
@@ -230,13 +155,13 @@
 									text-decoration: none
 									color: #111
 @media only screen and (max-width: 1030px)
-	.header-page .head-container .container__item .item__action .container__text
+	.header-page .head-container .container_item .itemaction .container_text
 		display: none
 
 @media screen and (max-width: 900px)
-	.header-page .head-container .container__item .item__action .container__text
+	.header-page .head-container .container_item .itemaction .container_text
 		display: none
-	.header-page .head-container .container__item .action-container .action__whats
+	.header-page .head-container .container_item .action-container .action_whats
 		display: none
 
 @media screen and (max-width: 750px)
@@ -271,5 +196,5 @@
 							display: block
 						.whats_platcont
 							display: block
-				.item__action .action-container .action__control .control__container .cl-session
+				.item_action .action-container .actioncontrol .control_container .cl-session
 					display: unset

@@ -1,0 +1,143 @@
+.container-consulta
+    width: 1170px
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+    &::before
+        display: table
+        content: " "
+    .row-consulta
+        margin-right: -15px
+        margin-left: -15px
+        &::before
+            display: table
+            content: " "
+        h1
+            font-size: 1.7em
+            margin-top: 20px
+            margin-bottom: 10px
+            font-family: inherit
+            font-weight: 500
+            line-height: 1.1
+            color: inherit
+        .panel
+            margin-bottom: 20px
+            background-color: #fff
+            border: 1px solid transparent
+            border-radius: 4px
+            box-shadow: 0 1px 1px rgba(0,0,0,.05)
+        .panel-primary
+            border-color: rgba(109,213,163,1)
+            >.panel-heading
+                color: #fff
+                background-color: rgba(109,213,163,1)
+                border-color: rgba(109,213,163,1)
+            .panel-heading
+                padding: 10px 15px
+                border-bottom: 1px solid transparent
+                border-top-left-radius: 3px
+                border-top-right-radius: 3px
+            .panel-body
+                padding: 15px
+                &::before
+                    display: table
+                    content: " "
+                .divBotonesFiltro
+                    margin-bottom: 20px
+                    white-space: nowrap
+                    text-align: center
+                    .btn-group
+                        position: relative
+                        display: inline-block
+                        vertical-align: middle
+                        &>.btn
+                            position: relative
+                            float: left
+                        &>.btn:first-child
+                            margin-left: 0
+                        &>.btn.active
+                            z-index: 2
+                        &>.btn.active:hover
+                            z-index: 2
+                        &>.btn:first-child:not(:last-child):not(.dropdown-toggle)
+                            border-top-right-radius: 0
+                            border-bottom-right-radius: 0
+                        .btn
+                            display: inline-block
+                            padding: 6px 12px
+                            margin-bottom: 0
+                            font-weight: 400
+                            line-height: 1.42857143
+                            text-align: center
+                            white-space: nowrap
+                            vertical-align: middle
+                            touch-action: manipulation
+                            cursor: pointer
+                            -webkit-user-select: none
+                            user-select: none
+                            background-image: none
+                            border: 1px solid transparent
+                            border-radius: 4px
+                        .btn-default
+                            color: #333
+                            background-color: #fff
+                            border-color: #ccc
+                            &:hover
+                                color: #333
+                                background-color: #e6e6e6
+                                border-color: #adadad
+                            &.active
+                                background-image: none
+                                color: #333
+                                background-color: #e6e6e6
+                                border-color: #adadad
+                        .btn.active
+                            outline: 0
+                            box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+                        .btnPor
+                            font-size: 0.7em
+                .form-horizontal
+                    .form-group
+                        margin-right: -15px
+                        margin-left: -15px
+                        margin-bottom: 15px
+                        &::before
+                            display: table
+                            content: " "
+                        &::after
+                            clear: both
+                            display: table
+                            content: " "
+                    .divCriterioBusqueda
+                        margin-bottom: 0px
+                    .divConsultaCampo
+                        margin-left: 16.66666667%
+                        float: left
+                        width: 66.66666667%
+                        position: relative
+                        min-height: 1px
+                        padding-right: 15px
+                        padding-left: 15px
+                        .form-control
+                            display: block
+                            width: 100%
+                            height: 34px
+                            padding: 6px 12px
+                            font-size: 14px
+                            line-height: 1.42857143
+                            color: #555
+                            background-color: #fff
+                            background-image: none
+                            border: 1px solid #ccc
+                            border-radius: 4px
+                            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+                            box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+                            -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+                            -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+                            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+                    .text-center
+                        width: 100%
+                        text-align: center
+    .footer-consulta
+        text-align: center

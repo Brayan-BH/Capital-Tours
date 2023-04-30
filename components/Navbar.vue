@@ -21,109 +21,49 @@
                 </div>
                 <nav id="id-menu" class="item__menu" :class="[interaction.movil_menu_open ? 'open' : '']">
                     <ul class="menu_ul">
-                        <li class="ul__li" @click="menu_movil_close">
-                            <nuxt-link to="/" class="li__text">Inicio</nuxt-link>
+                        <li class="ul__li" id="linksNav">
+                            <nuxt-link to="/" class="li__text" :class="{ 'active': selected === 0 }"
+                                @click="activeBar(0)">Inicio</nuxt-link>
                         </li>
-                        <li class="ul__li" @click="menu_movil_close">
-                            <nuxt-link to="/nosotros" class="li__text">Nosotros</nuxt-link>
+                        <li class="ul__li" id="linksNav">
+                            <nuxt-link to="/nosotros" class="li__text" :class="{ 'active': selected === 1 }"
+                                @click="activeBar(1)">Nosotros</nuxt-link>
                         </li>
-                        <li class="ul__li" @click="menu_movil_close">
-                            <nuxt-link to="/app" class="li__text">Descargas</nuxt-link>
+                        <li class="ul__li" id="linksNav">
+                            <nuxt-link to="/app" class="li__text" :class="{ 'active': selected === 2 }"
+                                @click="activeBar(2)">Descargas</nuxt-link>
                         </li>
-                        <li class="ul__li" @click="menu_movil_close">
-                            <nuxt-link to="/contactanos" class="li__text">Contáctanos</nuxt-link>
+                        <li class="ul__li" id="linksNav">
+                            <nuxt-link to="/contactanos" class="li__text" :class="{ 'active': selected === 3 }"
+                                @click="activeBar(3)">Contáctanos</nuxt-link>
                         </li>
-                        <li class="ul__li" @click="menu_movil_close">
-                            <nuxt-link to="/conductor" class="li__text">Conductores</nuxt-link>
+                        <li class="ul__li" id="linksNav">
+                            <nuxt-link to="/conductor" class="li__text" :class="{ 'active': selected === 4 }"
+                                @click="activeBar(4)">Conductores</nuxt-link>
                         </li>
-                        <li class="ul__li" @click="menu_movil_close">
-                            <nuxt-link to="/servicios" class="li__text">Servicios</nuxt-link>
+                        <li class="ul__li" id="linksNav">
+                            <nuxt-link to="/servicios" class="li__text" :class="{ 'active': selected === 5 }"
+                                @click="activeBar(5)">Servicios</nuxt-link>
                         </li>
-                        <li class="ul__li" @click="menu_movil_close">
-                            <nuxt-link to="/requisitos" class="li__text">Requisitos</nuxt-link>
+                        <li class="ul__li" id="linksNav">
+                            <nuxt-link to="/requisitos" class="li__text" :class="{ 'active': selected === 6 }"
+                                @click="activeBar(6)">Requisitos</nuxt-link>
                         </li>
                     </ul>
 
                 </nav>
                 <div class="item__action">
                     <div class="action-container">
-                        <!-- <div class="action__whats">
-                            <nav class="item__menu">
-                                <ul class="menu_ul">
-                                    <li class="ul__li">
-                                        <div class="li__container">
-                                            <button type="button" class="li-container__button">
-                                                Servicios
-                                            </button>
-                                            <ul class="li-container__menu">
-                                                <li class="">
-                                                    <span class="menu__header">Para Pequeñas Empresas</span>
-                                                    <ul class="menu__body">
-                                                        <li class="body__item">
-                                                            <nuxt-link to="">Contabilidad</nuxt-link >
-                                                        </li>
-                                                        <li class="body__item">
-                                                            <nuxt-link to="">Facturación</nuxt-link >
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="">
-                                                    <span class="menu__header">Para Mediana Empresa</span>
-                                                    <ul class="menu__body">
-                                                        <li class="body__item">
-                                                            <nuxt-link to="">Contabilidad</nuxt-link >
-                                                        </li>
-                                                        <li class="body__item">
-                                                            <nuxt-link to="">Sucursales</nuxt-link >
-                                                        </li>
-                                                    </ul>
-                                                </li>
-
-                                                <li class="">
-                                                    <span class="menu__header">Para grandes empresas</span>
-                                                    <ul class="menu__body">
-                                                        <li class="body__item">
-                                                            <nuxt-link to="">Precios para grandes empresas</nuxt-link >
-                                                        </li>
-                                                        <li class="body__item">
-                                                            <nuxt-link to="">Multi Sucursales</nuxt-link >
-                                                        </li>
-                                                        <li class="body__item">
-                                                            <nuxt-link to="">Contabilidad</nuxt-link >
-                                                        </li>
-                                                        <li class="body__item">
-                                                            <nuxt-link to="">Stock</nuxt-link>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                            </nav>
-                        </div> -->
                         <div class="action__control">
                             <div class="control__container">
                                 <div class="container__text cl-session">
-                                    <nuxt-link to="/login" class="li__text">Iniciar Sesión</nuxt-link>
+                                    <nuxt-link to="/consulta" class="li__text">Consulta</nuxt-link>
                                 </div>
                                 <div class="container__icon">
-                                    <nuxt-link to="/login" class="material-icons">login</nuxt-link>
+                                    <nuxt-link to="/consulta" class="material-icons">search</nuxt-link>
                                 </div>
                             </div>
                         </div>
-                        <div class="action__control">
-                            <div class="control__container">
-                                <div class="container__text">
-                                    <nuxt-link to="/signup" class="li__text">Registrate Ahora</nuxt-link>
-                                </div>
-                                <div class="container__icon">
-                                    <nuxt-link to="/signup" class="material-icons">how_to_reg</nuxt-link>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -133,37 +73,38 @@
 
 <script>
 
-    export default {
-        name: "Navbar",
-        mounted() {
-            let l = this.$refs.button_movil_menu;
-            console.log(l.style.display);
-        },
-        data() {
-            return {
-                interaction: {
-                    movil_menu_open: false,
-                    menu_movil_action: "#id-menu",
-                    movil_menu_icon: "menu"
-                }
-            };
-        },
-        methods: {
-            menu_movil_click() {
-                this.interaction.movil_menu_open = !this.interaction.movil_menu_open;
-                if (this.interaction.movil_menu_open) {
-                    this.interaction.menu_movil_action = "#";
-                    this.interaction.movil_menu_icon = "close";
-                } else {
-                    this.interaction.menu_movil_action = "#id-menu";
-                    this.interaction.movil_menu_icon = "menu";
-                }
+export default {
+    mounted() {
+        let l = this.$refs.button_movil_menu
+        console.log(l.style.display);
+    },
+    data() {
+        return {
+            interaction: {
+                movil_menu_open: false,
+                menu_movil_action: "#id-menu",
+                movil_menu_icon: "menu"
             },
-            menu_movil_close() {
-                this.interaction.movil_menu_open = false;
-                this.interaction.movil_menu_icon = "menu";
-
-            }
+            selected: null
         }
-    };
+    },
+    methods: {
+        menu_movil_click() {
+            this.interaction.movil_menu_open = !this.interaction.movil_menu_open
+            if (this.interaction.movil_menu_open) {
+                this.interaction.menu_movil_action = "#"
+                this.interaction.movil_menu_icon = "close"
+            } else {
+                this.interaction.menu_movil_action = "#id-menu"
+                this.interaction.movil_menu_icon = "menu"
+            }
+        },
+        menu_movil_close() {
+            this.interaction.movil_menu_open = false
+        },
+        activeBar(index) {
+            this.selected = index;
+        },
+    }
+}
 </script>
