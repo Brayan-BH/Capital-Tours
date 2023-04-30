@@ -182,6 +182,13 @@
 							margin-left: 4px
 							margin-right: 4px
 							cursor: default
+							&:focus::before
+								background: currentColor
+								content: ""
+								height: 2px
+								position: absolute
+								bottom: 9px
+								width: calc(100% - 16px)
 							&:hover::before
 								background: currentColor
 								content: ""
