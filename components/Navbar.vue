@@ -21,31 +21,31 @@
                 </div>
                 <nav id="id-menu" class="item__menu" :class="[interaction.movil_menu_open ? 'open' : '']">
                     <ul class="menu_ul">
-                        <li class="ul__li" id="linksNav">
+                        <li class="ul__li" id="linksNav" @click="menu_movil_close">
                             <nuxt-link to="/" class="li__text" :class="{ 'active': selected === 0 }"
                                 @click="activeBar(0)">Inicio</nuxt-link>
                         </li>
-                        <li class="ul__li" id="linksNav">
+                        <li class="ul__li" id="linksNav" @click="menu_movil_close">
                             <nuxt-link to="/nosotros" class="li__text" :class="{ 'active': selected === 1 }"
                                 @click="activeBar(1)">Nosotros</nuxt-link>
                         </li>
-                        <li class="ul__li" id="linksNav">
+                        <li class="ul__li" id="linksNav" @click="menu_movil_close">
                             <nuxt-link to="/app" class="li__text" :class="{ 'active': selected === 2 }"
                                 @click="activeBar(2)">Descargas</nuxt-link>
                         </li>
-                        <li class="ul__li" id="linksNav">
+                        <li class="ul__li" id="linksNav" @click="menu_movil_close">
                             <nuxt-link to="/contactanos" class="li__text" :class="{ 'active': selected === 3 }"
                                 @click="activeBar(3)">Contáctanos</nuxt-link>
                         </li>
-                        <li class="ul__li" id="linksNav">
+                        <li class="ul__li" id="linksNav" @click="menu_movil_close">
                             <nuxt-link to="/conductor" class="li__text" :class="{ 'active': selected === 4 }"
                                 @click="activeBar(4)">Conductores</nuxt-link>
                         </li>
-                        <li class="ul__li" id="linksNav">
+                        <li class="ul__li" id="linksNav" @click="menu_movil_close">
                             <nuxt-link to="/servicios" class="li__text" :class="{ 'active': selected === 5 }"
                                 @click="activeBar(5)">Servicios</nuxt-link>
                         </li>
-                        <li class="ul__li" id="linksNav">
+                        <li class="ul__li" id="linksNav" @click="menu_movil_close">
                             <nuxt-link to="/requisitos" class="li__text" :class="{ 'active': selected === 6 }"
                                 @click="activeBar(6)">Requisitos</nuxt-link>
                         </li>
@@ -100,7 +100,9 @@ export default {
             }
         },
         menu_movil_close() {
-            this.interaction.movil_menu_open = false
+            this.interaction.movil_menu_open = false;
+            this.interaction.movil_menu_icon = "menu";
+
         },
         activeBar(index) {
             this.selected = index;
