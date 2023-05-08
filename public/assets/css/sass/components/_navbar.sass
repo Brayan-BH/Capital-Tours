@@ -155,8 +155,39 @@
 									text-decoration: none
 									color: #111
 @media only screen and (max-width: 1030px)
-	.header-page .head-container .container_item .itemaction .container_text
-		display: none
+	.header-page
+		position: sticky
+		top: 0
+		background: #fff
+		// z-index: 1
+		.head-container
+			padding: 0
+			.container__item
+				.item__button_menu
+					display: block
+				.item__logo
+					flex: 1 1 auto
+				.item__div
+					display: none
+				.item__menu
+					display: none
+					position: absolute
+					width: calc( 101% - 4px )
+					height: calc( 50% - 54px )
+					top: 54px
+					z-index: 1
+					padding: 0
+					&.open
+						display: unset
+					.menu_ul
+						background-color: #fff
+						z-index: 9999
+						.ul__li
+							display: block
+						.whats_platcont
+							display: block
+				.item_action .action-container .actioncontrol .control_container .cl-session
+					display: unset
 
 @media screen and (max-width: 900px)
 	.header-page .head-container .container_item .itemaction .container_text

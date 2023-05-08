@@ -131,7 +131,7 @@
         <div class="footer__sub ctn">
             <small class="subFooter__credits">
                 <nuxt-link to="https://www.scor.com/" target="_blank" rel="noopener">
-                    <img src="/img/logo.png" class="logo logo--scor | db" width="125" height="62" viewBox="0 0 125 36"
+                    <img src="/img/logo.png" class="logo logo--scor | db" width="125" viewBox="0 0 125 36"
                         fill="#fff" aria-hidden="true" />
                 </nuxt-link>
                 Empresa Capital Tours. Todos los derechos reservados.

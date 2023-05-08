@@ -1,10 +1,5 @@
 <template>
     <div class="container-consulta">
-        <!-- <div class="header" id="divHeader">
-            <div class="offset">
-                <img src="/img/logo.png" class="imgLogo">
-            </div>
-        </div> -->
         <div class="row-consulta">
             <div class="offset">
                 <div>
@@ -26,16 +21,17 @@
                             </div>
                         </div>
                         <!-- <form target="mainFrame" method="post" name="mainForm" action="jcrS00Alias" id="form01"> -->
-                        <form class="form-horizontal" role="form" method="post" name="mainForm" action="jcrS00Alias"
-                            id="form01">
+                        <form class="form-horizontal" id="form01">
                             <div class="form-group divCriterioBusqueda">
-                                <div class="offset divConsultaCampo" id="consulta_por_placa">
+                                <div class="offset divConsultaCampo" id="consulta_por_placa"
+                                    :style="{ display: interaction.placa ? 'inline-block' : 'none' }">
                                     <input type="tel" class="form-control" id="txtRuc" name="search1"
-                                        placeholder="Ingrese RUC"
+                                        placeholder="Ingrese numero de placa"
                                         pattern="([0-9]|[0-9]|[0-9]|[0-9]|[0-9]|[0-9]|[0-9]|[0-9]|[0-9]|[0-9]|[0-9])"
                                         tabindex="1"><!-- maxlength="11"  -->
                                 </div>
-                                <div class="form-control divConsultaCampo" id="consulta_por_documento">
+                                <div class="form-control divConsultaCampo" id="consulta_por_documento"
+                                    :style="{ display: interaction.documento ? 'inline-block' : 'none' }">
                                     <select name="tipdoc" class="form-control">
                                         <option value="1" selected="">Documento Nacional de Identidad</option>
                                         <option value="4">Carnet de Extranjeria</option>
@@ -52,8 +48,6 @@
                                 <div class="col-sm-12 text-center">
                                     <button type="button" class="btn btn-primary" id="btnAceptar"
                                         tabindex="3">Buscar</button>
-                                    <button type="button" class="btn btn-danger" id="btnVolverWorkspace"
-                                        style="display: none;">Volver</button>
                                 </div>
                             </div>
                         </form>
@@ -69,32 +63,26 @@
 <script>
     export default {
         mounted() {
-            // Llamar a la función consulta_por_placa al cargar la página
-            window.onload = this.consulta_por_placa();
+
+        },
+        data() {
+            return {
+                interaction: {
+                    placa: true,
+                    documento: false
+                }
+            };
         },
         methods: {
             consulta_por_placa() {
-                const consulta_placa = document.getElementById('consulta_por_placa');
-                const consulta_documento = document.getElementById('consulta_por_documento');
-
-                consulta_placa.style.display = "inline-block";
-                consulta_documento.style.display = "none";
+                this.interaction.placa = true;
+                this.interaction.documento = false;
             },
 
             consulta_por_documento() {
-                const consulta_placa = document.getElementById('consulta_por_placa');
-                const consulta_documento = document.getElementById('consulta_por_documento');
-
-                consulta_placa.style.display = "none";
-                consulta_documento.style.display = "inline-block";
+                this.interaction.placa = false;
+                this.interaction.documento = true;
             },
-
-
-
-            // Agregar evento onclick al botón correspondiente
-            // const btn_consulta_documento = document.getElementById('btn_consulta_documento');
-
-
         }
-};
+    };
 </script>
