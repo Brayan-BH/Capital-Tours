@@ -57,7 +57,8 @@
                         <div class="action__control">
                             <div class="control__container">
                                 <div class="container__text cl-session">
-                                    <nuxt-link to="/consulta" class="li__text">Consulta</nuxt-link>
+                                    <nuxt-link to="/consulta" class="li__text" :class="{ 'active': selected === 7 }"
+                                @click="activeBar(7)">Consulta</nuxt-link>
                                 </div>
                                 <div class="container__icon">
                                     <nuxt-link to="/consulta" class="material-icons">search</nuxt-link>

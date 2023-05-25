@@ -10,11 +10,11 @@
                     <div class="panel-body">
                         <div class="text-center divBotonesFiltro text-nowrap">
                             <div role="group" class="btn-group">
-                                <button id="btnPorRuc" class="btn btn-default  btnPor" type="button"
+                                <button class="btn" type="button"
                                     @click="consulta_por_placa">
                                     Por Placa
                                 </button>
-                                <button id="btnPorDocumento" class="btn btn-default btnPor" type="button"
+                                <button class="btn" type="button"
                                     @click="consulta_por_documento">
                                     Por Documento
                                 </button>
@@ -28,7 +28,8 @@
                                     <input type="tel" class="form-control" id="txtRuc" name="search1"
                                         placeholder="Ingrese numero de placa"
                                         pattern="([0-9]|[0-9]|[0-9]|[0-9]|[0-9]|[0-9]|[0-9]|[0-9]|[0-9]|[0-9]|[0-9])"
-                                        tabindex="1"><!-- maxlength="11"  -->
+                                        tabindex="1">
+                                        <!-- maxlength="11"  -->
                                 </div>
                                 <div class="form-control divConsultaCampo" id="consulta_por_documento"
                                     :style="{ display: interaction.documento ? 'inline-block' : 'none' }">
@@ -46,8 +47,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12 text-center">
-                                    <button type="button" class="btn btn-primary" id="btnAceptar"
-                                        tabindex="3">Buscar</button>
+                                    <nuxt-link to="/consultainfo" class="btn btn-primary">Buscar</nuxt-link>
                                 </div>
                             </div>
                         </form>
